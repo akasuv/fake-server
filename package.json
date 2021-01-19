@@ -1,23 +1,32 @@
 {
-	"name": "fake-server",
-	"version": "1.0.0",
-	"description": "",
-	"main": "server.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "node server.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/akasuv/fake-server.git"
-	},
-	"author": "Chris Su",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/akasuv/fake-server/issues"
-	},
-	"homepage": "https://github.com/akasuv/fake-server#readme",
-	"dependencies": {
-		"json-server": "^0.16.3"
-	}
+  "name": "fake-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec json-server ./src/db/index.js --routes routes.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akasuv/fake-server.git"
+  },
+  "author": "Chris Su",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akasuv/fake-server/issues"
+  },
+  "homepage": "https://github.com/akasuv/fake-server#readme",
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "json-server": "^0.16.3",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11"
+  }
 }
