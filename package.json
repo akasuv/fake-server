@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec json-server ./src/db/index.js --routes routes.json"
+    "start": "json-server ./src/db/index.js --routes routes.json",
+    "dev": "nodemon --exec json-server ./src/db/index.js --routes routes.json"
   },
   "repository": {
     "type": "git",
